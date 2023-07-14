@@ -30,7 +30,7 @@
                 <td><?= $color ?></td>
                 <td><img src="./img/<?= $anh ?>" alt="" style="height:200px;"></td>
                 <td>
-                    <p class="mota" style="width:400px"><?= $mota ?></p>
+                    <p class="mota" style="width:300px"><?= $mota ?></p>
                 </td>
                 <td><?= $tendm ?></td>
                 <td><a href="index.php?act=editpro&id=<?php echo $id  ?>" class="btn btn-secondary"> EDIT</a>

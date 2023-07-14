@@ -17,35 +17,19 @@ require "./model/sanpham.php";
 
     <!-- Fontawesome CDN Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
-    <link rel="stylesheet" href="css/style.css?v=1" />
+    <link rel="stylesheet" href="css/style.css?v=3" />
 </head>
 
 <body>
-    <nav class="sidebar">
-        <a href="#" class="logo">Admin Shop</a>
-
-        <div class="menu-content">
-            <ul class="menu-items">
-                <div class="menu-title">Trang Quản Trị</div>
-
-                <li class="item">
-                    <a href="index.php?act=sanpham">Sản phẩm</a>
-                </li>
-                <li class="item">
-                    <a href="#">Danh mục</a>
-                </li>
-
-                <li class="item">
-                    <a href="#">Tài khoản</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <nav class="navbar">
-        <i class="fa-solid fa-bars" id="sidebar-close"></i>
-    </nav>
-
+    <div class="sidebar">
+        <div class="title">Admin</div>
+        <ul class="list-group">
+            <li class="list-group-item"><a href="">Danh mục</a></li>
+            <li class="list-group-item"><a href="index.php?act=sanpham">Sản phẩm</a></li>
+            <li class="list-group-item"><a href="">Tài khoản</a></li>
+            <li class="list-group-item"><a href="">Bình luận</a></li>
+        </ul>
+    </div>
     <main class="main">
         <?php
         if (isset($_GET["act"])) {
@@ -121,7 +105,6 @@ require "./model/sanpham.php";
         }
         ?>
     </main>
-
     <script src="js/script.js"></script>
 </body>
 
