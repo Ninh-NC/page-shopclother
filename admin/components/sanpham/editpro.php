@@ -13,17 +13,6 @@ $product = loadone_sp($id);
         <input type="text" class="form-control" name="gia" value="<?php echo $product['gia'] ?>">
     </div>
     <div class="col-md-6">
-        <label for="giamgia" class="form-label">Mô tả</label>
-        <textarea rows='3' cols='30' type="text" class="form-control" name="mota">
-        <?php echo $product['mota'] ?>
-        </textarea>
-    </div>
-
-    <div class="col-md-6">
-        <label for="soluong" class="form-label">Số lượng</label>
-        <input type="text" class="form-control" name="soluong" value="<?php echo $product['soluong'] ?>">
-    </div>
-    <div class="col-md-6">
         <label for="soluong" class="form-label">Size</label>
         <div class="d-flex justify-content-start  align-items-center gap-3">
             <div class="custom-control custom-radio custom-control-inline">
@@ -47,6 +36,18 @@ $product = loadone_sp($id);
                 <label class="custom-control-label" for="size-5">XL</label>
             </div>
         </div>
+    </div>
+
+
+    <div class="col-md-6">
+        <label for="soluong" class="form-label">Số lượng</label>
+        <input type="text" class="form-control" name="soluong" value="<?php echo $product['soluong'] ?>">
+    </div>
+    <div class="col-md-6">
+        <label for="giamgia" class="form-label">Mô tả</label>
+        <textarea rows='3' cols='30' type="text" class="form-control" name="mota">
+        <?php echo $product['mota'] ?>
+        </textarea>
     </div>
     <div class="col-md-6">
         <label for="fileImg" class="form-label">Hình ảnh</label>

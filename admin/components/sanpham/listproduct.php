@@ -28,7 +28,7 @@
                 <td><?= $soluong ?></td>
                 <td><?= $size ?></td>
                 <td><?= $color ?></td>
-                <td><img src="./img/<?= $anh ?>" alt="" style="height:200px;"></td>
+                <td><img src="./img/<?= $anh ?>" alt="" style="width:150px; height:200px;"></td>
                 <td>
                     <p class="mota" style="width:300px"><?= $mota ?></p>
                 </td>
